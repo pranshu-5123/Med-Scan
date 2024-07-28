@@ -43,7 +43,7 @@ def augment_images(input_directory, output_directory, num_augmentations=5):
     labels = {}
     max_images = 0
 
-    # Collect image paths and determine the maximum number of images in any class
+    # Collect image paths and determine the maximum number of images in any class 
     for class_name in os.listdir(input_directory):
         class_path = os.path.join(input_directory, class_name)
         if os.path.isdir(class_path):
@@ -87,7 +87,6 @@ def augment_images(input_directory, output_directory, num_augmentations=5):
                     print(f"Original image copied to: {destination_path}")
 
 
-# Usage
 input_directory = r'D:\Directory\Med Scan\Segmented Medicinal Leaf Images'  # Use raw string literals for paths
 output_directory = r'D:\Directory\Med Scan\BalancedData'  # Use raw string literals for paths
 augment_images(input_directory, output_directory, num_augmentations=5)
