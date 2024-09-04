@@ -6,9 +6,6 @@ from torch.utils.data import DataLoader
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 import timm  # for efficient loading of EfficientNet
 
-# Set up device
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 # Data paths
 train_dir = 'D:\Folder\Med Scan\split\train'  # Update this
 val_dir = 'D:\Folder\Med Scan\split\validation'  # Update this
